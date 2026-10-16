@@ -10,9 +10,9 @@ const WHATSAPP_NUMBER = '+971 50 734 9311';
 //    Works with: YouTube (any link, incl. youtu.be and Shorts), Vimeo,
 //    Google Drive (file set to "Anyone with the link"), or a direct .mp4 link.
 const VIDEO_LINKS = {
-  intro:     '',   // Section 1 — intro video
-  coding:    '',   // Section 3 — coding video
-  marketing: '',   // Section 3 — digital marketing video
+  intro: 'https://youtu.be/aE2Iwzrp_94?si=DVWEnoYMDce7erU2',   // Section 1 — intro video
+  coding: 'https://youtu.be/KT1r1qk_SWY?si=cLMV-42W4GoLxbN4',   // Section 3 — coding video
+  marketing: 'https://youtu.be/QusJ4fpWQwA?si=F_VJorZGvNVAcli7',   // Section 3 — digital marketing video
 };
 
 // 3) Message for the "Ask us on WhatsApp" link under the packages.
@@ -89,7 +89,7 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
     const text = encodeURIComponent(message);
     // With no number set, WhatsApp opens and lets the visitor pick a chat.
     return num ? 'https://wa.me/' + num + '?text=' + text
-               : 'https://wa.me/?text=' + text;
+      : 'https://wa.me/?text=' + text;
   }
 
   function textOf(root, sel) {
@@ -170,13 +170,13 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
   // Each group: the elements to animate, the direction, and the gap (ms)
   // between items in the same row so they arrive one after another.
   const REVEAL_GROUPS = [
-    { sel: '.sec-head > *',                    dir: 'up',    stagger: 120 },
-    { sel: '.story',                           dir: 'up',    stagger: 140, perRow: 'stories' },
-    { sel: '.track',                           dir: 'up' },
-    { sel: '.track__text > :not(.benefits)',   dir: 'up',    stagger: 90,  perRow: 'track' },
-    { sel: '.benefits li',                     dir: 'up',    stagger: 90,  perRow: 'benefits' },
-    { sel: '.pkg',                             dir: 'up',    stagger: 160 },
-    { sel: '.helpbar',                         dir: 'up' }
+    { sel: '.sec-head > *', dir: 'up', stagger: 120 },
+    { sel: '.story', dir: 'up', stagger: 140, perRow: 'stories' },
+    { sel: '.track', dir: 'up' },
+    { sel: '.track__text > :not(.benefits)', dir: 'up', stagger: 90, perRow: 'track' },
+    { sel: '.benefits li', dir: 'up', stagger: 90, perRow: 'benefits' },
+    { sel: '.pkg', dir: 'up', stagger: 160 },
+    { sel: '.helpbar', dir: 'up' }
   ];
 
   function setupReveal() {
@@ -191,8 +191,8 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
           // Stories: count position within the visible row (3, 2 or 1 per row)
           const w = window.innerWidth;
           const perRow = g.perRow === 'stories' ? (w <= 680 ? 1 : w <= 1000 ? 2 : 3)
-                       : g.perRow === 'track' ? 3
-                       : g.perRow === 'benefits' ? 4 : 0;
+            : g.perRow === 'track' ? 3
+              : g.perRow === 'benefits' ? 4 : 0;
           const pos = perRow ? i % perRow : i;
           el.style.setProperty('--reveal-delay', (pos * g.stagger) + 'ms');
         }

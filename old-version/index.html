@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevScale 1-on-1 Mentorship | Break Into High-Income Tech Roles</title>
+  <meta name="description" content="Land high-paying remote software engineering jobs in 90 days. 1-on-1 pair programming, production microservice architecture, and direct WhatsApp sales support.">
+  <meta name="theme-color" content="#0a0f1d">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DevScale 1-on-1 Mentorship | Fast-Track Your Tech Career">
+  <meta property="og:description" content="Personalized 1-on-1 coaching for career switchers & engineers upgrading to high-income dev roles.">
+  <meta property="og:image" content="assets/hero_video.jpg">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Floating Live Number Configurator Bar -->
+  <aside class="config-bar" id="configBar" aria-label="WhatsApp Configuration Bar">
+    <div class="config-inner">
+      <div class="config-badge">
+        <span class="live-dot"></span>
+        <strong>WhatsApp Live Router:</strong>
+      </div>
+      <div class="config-inputs">
+        <label for="waPhoneInput" class="sr-only">WhatsApp Phone Number</label>
+        <div class="input-with-icon">
+          <svg class="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <input type="text" id="waPhoneInput" value="+15553829041" placeholder="e.g. +919876543210 or +971501234567" title="Enter WhatsApp phone number with country code">
+        </div>
+        <button id="savePhoneBtn" class="btn-micro" type="button">Update Links</button>
+      </div>
+      <div class="config-preview">
+        <span class="preview-label">Routing to:</span>
+        <code id="activePhoneDisplay">+15553829041</code>
+      </div>
+      <button class="config-close-btn" id="configToggleBtn" title="Toggle Config Bar" aria-label="Toggle Configuration">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="DevScale Mentorship Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span class="logo-text">Dev<span class="text-gradient">Scale</span></span>
+        <span class="badge-mentorship">1-on-1 Mentorship</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#social-proof">Results</a>
+        <a href="#methodology">How It Works</a>
+        <a href="#packages">Packages & Pricing</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#packages" class="btn btn-outline-nav">View Packages</a>
+        <a href="#packages" class="btn btn-primary-nav whatsapp-hero-trigger">
+          <svg class="whatsapp-icon-sm" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+          </svg>
+          Chat with Mentor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Notification Banner / Micro-Urgency -->
+  <div class="urgent-banner">
+    <div class="container urgent-content">
+      <span class="pulse-indicator"></span>
+      <p><strong>October Cohort:</strong> Only <strong>4 direct mentorship seats</strong> remaining this month to guarantee 1-on-1 quality.</p>
+      <a href="#packages" class="banner-link">Lock In Your Spot &rarr;</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         SECTION 1: HERO SECTION
+         ========================================== -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-header-block">
+          <div class="hero-pill">
+            <span class="pill-sparkle">&#10024;</span>
+            <span>HIGH-CONVERSION CAREER ACCELERATOR</span>
+            <span class="pill-divider">&bull;</span>
+            <span class="pill-highlight">ZERO TUTORIAL HELL</span>
+          </div>
+
+          <h1 class="hero-title">
+            Land a <span class="text-gradient">High-Income Software Engineer</span> Role in 90 Days Through Direct 1-on-1 Mentorship
+          </h1>
+
+          <p class="hero-subtitle">
+            Skip the endless generic YouTube tutorials. Pair-program directly with senior FAANG-tier engineers, build scalable production microservices, and fast-track your path to <strong>$95,000–$160,000+</strong> engineering careers with direct WhatsApp sales & career triage.
+          </p>
+
+          <!-- Fast CTA button anchor linking smoothly down to packages -->
+          <div class="hero-cta-wrapper">
+            <a href="#packages" id="heroPackagesCta" class="btn btn-hero-primary">
+              <span>Explore Packages &amp; Inquire</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            
+            <a href="#packages" id="heroWhatsappDirectCta" class="btn btn-hero-whatsapp dynamic-wa-link" data-tier="general">
+              <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+              </svg>
+              <span>Instant WhatsApp Inquiry</span>
+            </a>
+          </div>
+
+          <!-- Micro Social Proof Snippet -->
+          <div class="hero-trust-snippet">
+            <div class="avatar-stack">
+              <span class="avatar av-1">AC</span>
+              <span class="avatar av-2">RK</span>
+              <span class="avatar av-3">SJ</span>
+              <span class="avatar av-4">ML</span>
+            </div>
+            <div class="trust-rating">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="rating-text"><strong>4.98/5</strong> from 540+ career switchers & engineers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Intro Video Placeholder -->
+        <div class="hero-video-wrapper">
+          <div class="video-card" id="heroVideoCard" role="region" aria-label="Introductory video preview">
+            <div class="video-media-container">
+              <img src="assets/hero_video.jpg" alt="DevScale Mentorship live coding session and architecture overview" class="video-thumb" id="heroVideoThumb">
+              
+              <div class="video-overlay-gradient"></div>
+
+              <!-- Top Video UI Badges -->
+              <div class="video-top-bar">
+                <span class="video-live-pill">
+                  <span class="rec-dot"></span> 4K MENTORSHIP BREAKDOWN
+                </span>
+                <span class="video-duration">03:42 MIN</span>
+              </div>
+
+              <!-- Center Interactive Play Button Trigger -->
+              <button class="play-button-big" id="heroPlayBtn" aria-label="Play introductory video tour">
+                <span class="play-pulse-ring"></span>
+                <span class="play-pulse-ring delay"></span>
+                <div class="play-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <span class="play-button-label">Watch How We Build &amp; Place Engineers</span>
+              </button>
+
+              <!-- Bottom Inset Card Info -->
+              <div class="video-bottom-caption">
+                <div class="mentor-badge-snippet">
+                  <span class="dot-online"></span>
+                  <strong>Mentor Anya Reed</strong> &bull; Ex-Staff Architect &amp; DevScale Founder
+                </div>
+                <p class="caption-text">"Inside our 1-on-1 sprint: Live pair programming, production code reviews, and instant WhatsApp unblocking."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: SOCIAL PROOF & RESULTS
+         ========================================== -->
+    <section class="section-proof" id="social-proof">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <div class="section-kicker">VERIFIED STUDENT RESULTS &amp; TRANSITIONS</div>
+          <h2 class="section-heading">Proof That 1-on-1 Guidance Beats Generic Bootcamps Every Single Time</h2>
+          <p class="section-subtext">
+            Real offer letters, real production GitHub commits, and direct WhatsApp celebrations from developers who upgraded their careers with us.
+          </p>
+        </div>
+
+        <!-- 3 Trust / Credibility Metric Callouts -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value-row">
+              <span class="metric-number">94.2%</span>
+              <span class="metric-trend">&#8593; Top 1%</span>
+            </div>
+            <div class="metric-title">Offer Acceptance Rate</div>
+            <p class="metric-desc">Of our students land mid-to-senior software engineering roles within 120 days of graduation.</p>
+          </div>
+
+          <div class="metric-card highlight-metric">
+            <div class="metric-value-row">
+              <span class="metric-number">$48,500</span>
+              <span class="metric-trend">&#43;76% Avg Hike</span>
+            </div>
+            <div class="metric-title">Average Salary Increase</div>
+            <p class="metric-desc">Mean first-year compensation bump across all career switchers and leveling engineers.</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value-row">
+              <span class="metric-number">540+</span>
+              <span class="metric-trend">18 Countries</span>
+            </div>
+            <div class="metric-title">Engineers Mentored &amp; Placed</div>
+            <p class="metric-desc">Working at hyper-growth tech startups, SaaS scale-ups, and global enterprise engineering teams.</p>
+          </div>
+        </div>
+
+        <!-- Clean Grid Layout for Image Proof Cards -->
+        <div class="proof-grid">
+          
+          <!-- Proof Card 1: Official Offer Letter -->
+          <article class="proof-card">
+            <div class="proof-image-container">
+              <img src="assets/proof_offer.jpg" alt="Alex Chen Software Engineer II $125k offer letter acceptance and team celebration" class="proof-img" loading="lazy">
+              <span class="proof-tag tag-offer">&#127881; $125k Offer Accepted</span>
+            </div>
+            <div class="proof-body">
+              <div class="student-meta">
+                <span class="student-name">Alex Chen</span>
+                <span class="student-role">Non-Tech Ops &rarr; Software Engineer II</span>
+              </div>
+              <h3 class="proof-headline">"From operations analyst to $125,000 Software Engineer in 14 weeks."</h3>
+              <p class="proof-caption">
+                Alex struggled for 9 months with self-paced YouTube tutorials. Within 14 weeks of our 1-on-1 pair programming and custom microservices curriculum, he cracked 3 final round rounds and accepted a $125k/yr offer at NexisAI.
+              </p>
+              <div class="proof-footer">
+                <span class="proof-stat-pill"><strong>Outcome:</strong> 115% Total Compensation Increase</span>
+                <span class="proof-tech-pill">Next.js &bull; TypeScript &bull; Go</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proof Card 2: Production Portfolio & GitHub Commits -->
+          <article class="proof-card">
+            <div class="proof-image-container">
+              <img src="assets/proof_project.jpg" alt="Nexus Flow SaaS analytics dashboard with 824 GitHub commits and microservices architecture" class="proof-img" loading="lazy">
+              <span class="proof-tag tag-code">&#128187; Real Architecture Proof</span>
+            </div>
+            <div class="proof-body">
+              <div class="student-meta">
+                <span class="student-name">Elena Rostova</span>
+                <span class="student-role">Junior Frontend &rarr; Senior Full-Stack Lead</span>
+              </div>
+              <h3 class="proof-headline">"Built an enterprise SaaS system that blew tech interviewers away."</h3>
+              <p class="proof-caption">
+                Instead of cookie-cutter todo lists, Elena engineered 'Nexus Flow'—a real-time SaaS with GraphQL microservices, AWS containerization, and 98/100 Lighthouse performance. Recruiters reached out to HER after reviewing the GitHub repo.
+              </p>
+              <div class="proof-footer">
+                <span class="proof-stat-pill"><strong>Outcome:</strong> 824 Commits &bull; 4 Recruiter Inbounds</span>
+                <span class="proof-tech-pill">Docker &bull; Redis &bull; GraphQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proof Card 3: WhatsApp DM Celebration -->
+          <article class="proof-card">
+            <div class="proof-image-container">
+              <img src="assets/proof_whatsapp.jpg" alt="Direct WhatsApp chat proof showing student clearing final round tech interview" class="proof-img" loading="lazy">
+              <span class="proof-tag tag-wa">&#128172; Verified WhatsApp DM</span>
+            </div>
+            <div class="proof-body">
+              <div class="student-meta">
+                <span class="student-name">Rohan K.</span>
+                <span class="student-role">College Graduate &rarr; Remote Backend Dev</span>
+              </div>
+              <h3 class="proof-headline">"Cleared the final round technical interview! Official offer in hand."</h3>
+              <p class="proof-caption">
+                Rohan used our daily WhatsApp voice-note support to debug live production bugs and mock-interview for system design questions. He signed his first full-time engineering contract within 11 weeks of enrollment.
+              </p>
+              <div class="proof-footer">
+                <span class="proof-stat-pill"><strong>Outcome:</strong> Fast-Tracked 1st Remote Contract</span>
+                <span class="proof-tech-pill">Daily Voice Note Support</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: METHODOLOGY ("HOW WE DELIVER")
+         ========================================== -->
+    <section class="section-methodology" id="methodology">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <div class="section-kicker">THE 1-ON-1 SPRINT FRAMEWORK</div>
+          <h2 class="section-heading">How We Deliver The Sessions &amp; Build Your Engineering Muscle</h2>
+          <p class="section-subtext">
+            No pre-recorded fluff. Every minute is engineered to turn theoretical knowledge into instinctive, high-velocity engineering skills.
+          </p>
+        </div>
+
+        <!-- 2 Distinct Feature Blocks (Side-by-side on desktop, stacked on mobile) -->
+        <div class="methodology-blocks">
+          
+          <!-- Block 1 (Video 1): Preparation, Setup & Live Delivery -->
+          <div class="feature-block">
+            <div class="block-video-wrapper">
+              <div class="block-video-card" data-video-title="Video 1: Live 1-on-1 Session Delivery &amp; Pair Programming">
+                <img src="assets/methodology_prep.jpg" alt="Live session delivery with code editor and mentor video split screen" class="block-thumb">
+                <div class="block-overlay">
+                  <span class="block-video-badge">LIVE SESSION DELIVERY</span>
+                  <button class="block-play-btn" aria-label="Watch Video 1 delivery walkthrough">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                  <span class="block-time">12:45 MIN &bull; SPRINT WORKFLOW</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-pill">PILLAR 01 &bull; EXECUTION</div>
+              <h3 class="block-title">Preparation, Setup &amp; Live Pair-Programming Delivery</h3>
+              <p class="block-intro">
+                You never sit alone scratching your head. We conduct synchronized live coding sessions where senior engineers guide your hands through production complexities.
+              </p>
+
+              <ul class="methodology-bullets">
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Pre-Session Code Profiling &amp; Sprint Backlog:</strong>
+                    Before every live call, your mentor inspects your GitHub repository and customizes a focused 60-minute sprint ticket backlog targeting your exact weaknesses.
+                  </div>
+                </li>
+
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Cloud Live-Share IDE &amp; Architecture Whiteboards:</strong>
+                    Zero friction setup. We hop into synchronized VS Code Live Share sessions with interactive microservice flowcharts, debugging complex bugs together in real-time.
+                  </div>
+                </li>
+
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Hands-On Production Code Delivery:</strong>
+                    You type, you architect, and we critique every design pattern, security vulnerability, and API contract on the fly so you internalize senior engineering standards immediately.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block 2 (Video 2): Feedback Loop, Performance Tracking & Support -->
+          <div class="feature-block reverse">
+            <div class="block-video-wrapper">
+              <div class="block-video-card" data-video-title="Video 2: Async PR Code Reviews &amp; WhatsApp Support">
+                <img src="assets/methodology_tracking.jpg" alt="Performance tracking dashboard and GitHub pull request code review" class="block-thumb">
+                <div class="block-overlay">
+                  <span class="block-video-badge">FEEDBACK &amp; TRACKING LOOP</span>
+                  <button class="block-play-btn" aria-label="Watch Video 2 feedback loop walkthrough">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                  <span class="block-time">08:20 MIN &bull; ASYNC PROTOCOL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-pill">PILLAR 02 &bull; MOMENTUM</div>
+              <h3 class="block-title">Async Feedback Loop, Performance Tracking &amp; WhatsApp Support</h3>
+              <p class="block-intro">
+                Learning doesn't stop when the video call ends. We keep your momentum compounding every single day through continuous async PR audits and immediate chat triage.
+              </p>
+
+              <ul class="methodology-bullets">
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Rapid 3-Hour Async GitHub PR Reviews:</strong>
+                    Submit pull requests anytime. Your senior mentor provides granular inline code reviews on memory leaks, algorithmic complexity, clean architecture, and TypeScript strictness.
+                  </div>
+                </li>
+
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Real-Time Milestone &amp; Interview Readiness Matrix:</strong>
+                    Track your exact progress across our 5 core engineering axes: Problem Solving (DSA), Full-Stack Systems, CI/CD Cloud DevOps, Behavioral Storytelling, and Live Coding Speed.
+                  </div>
+                </li>
+
+                <li class="bullet-item">
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div class="bullet-text">
+                    <strong>Dedicated WhatsApp Direct Line For Instant Unblocking:</strong>
+                    Stuck on a tricky CORS bug or docker compose networking error? Send a 30-second WhatsApp voice note or screenshot and get unblocked without waiting days for help.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: 2-TIER PRICING & PACKAGE SECTION
+         ========================================== -->
+    <section class="section-pricing" id="packages">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <div class="section-kicker">CHOOSE YOUR ACCELERATOR PATH</div>
+          <h2 class="section-heading">Select Your Mentorship Tier &amp; Chat Directly With Our Admissions Reps</h2>
+          <p class="section-subtext">
+            Every package connects you directly to our sales inbox with a tailored pre-filled message, ensuring you speak with a senior technical advisor who understands your exact background.
+          </p>
+        </div>
+
+        <!-- 2-Tier Pricing Grid -->
+        <div class="pricing-grid">
+          
+          <!-- Package 1: Standard / Starter Tier -->
+          <div class="pricing-card card-standard">
+            <div class="card-header">
+              <span class="package-category">STARTER / FOUNDATION</span>
+              <h3 class="package-name">Core Career Sprint</h3>
+              <p class="package-audience">
+                <strong>Best For:</strong> Self-taught coders, CS students, or junior developers who already know coding basics but need rigorous structure, portfolio refinement, and 1-on-1 debugging to land their first full-time role.
+              </p>
+              
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-amount">699</span>
+                <span class="price-cycle">/ month</span>
+              </div>
+              <div class="price-guarantee-note">Cancel anytime &bull; No lock-in contracts</div>
+            </div>
+
+            <div class="card-deliverables">
+              <h4 class="deliverables-heading">What’s Included in Core Sprint:</h4>
+              <ul class="deliverables-list">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>4x 60-Min Live 1-on-1 Sessions:</strong> Pair programming, code debugging, and architecture breakdown.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Production SaaS Project Blueprint:</strong> Build a clean fullstack app using React, TypeScript &amp; Node.js.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Async GitHub Code Audits (24h Turnaround):</strong> Inline PR reviews on your commits for clean code practices.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Direct WhatsApp Channel:</strong> Text &amp; voice message support for daily code blocker triage.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Resume &amp; GitHub Portfolio Polish:</strong> Re-engineer your developer profile to pass automated recruiter ATS screens.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Technical Requirement: Dynamic WhatsApp link with URL encoded message -->
+            <div class="card-action">
+              <a href="#" class="btn btn-whatsapp-card dynamic-wa-link" data-tier="standard" id="ctaStandardTier">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>Inquire About Core Sprint &rarr;</span>
+              </a>
+              <div class="prefill-preview">
+                <small>Pre-filled message: <em>"Hi! I'm interested in the Core Career Sprint package ($699/mo)..."</em></small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2: Pro / Intensive (Featured / Highlighted) -->
+          <div class="pricing-card card-pro featured-card">
+            
+            <div class="badge-featured">
+              <span class="sparkle">&#9733;</span> MOST POPULAR &bull; HIGHEST PLACEMENT RATE
+            </div>
+
+            <div class="card-header">
+              <span class="package-category pro-category">INTENSIVE ACCELERATOR</span>
+              <h3 class="package-name">Elite Full-Stack Accelerator</h3>
+              <p class="package-audience">
+                <strong>Best For:</strong> Career switchers, non-CS grads, and ambitious developers who want complete end-to-end transformation, high-income remote job offers, and ruthless technical interview prep.
+              </p>
+              
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-amount">1,299</span>
+                <span class="price-cycle">/ month</span>
+              </div>
+              <div class="price-guarantee-note text-emerald">Includes 14-Day 100% Risk-Free Transformation Guarantee</div>
+            </div>
+
+            <div class="card-deliverables">
+              <h4 class="deliverables-heading">Everything in Core, PLUS Extended High-Impact Assets:</h4>
+              <ul class="deliverables-list pro-list">
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>8x 60-Min Intensive Live 1-on-1 Sessions:</strong> Twice-weekly deep dives into distributed systems, advanced DSA, and scalable architecture.</span>
+                </li>
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Enterprise Microservices Portfolio Build:</strong> Deploy a real-world multi-tenant app with Docker, Redis caching, AWS ECS, and PostgreSQL.</span>
+                </li>
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Priority 3-Hour Async Code Reviews:</strong> Unmatched review turnaround so your PRs are never blocked.</span>
+                </li>
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>4x Live Technical &amp; System Design Mock Interviews:</strong> Real simulation of Google/Stripe/Meta technical interview loops with recorded rubrics.</span>
+                </li>
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>VIP Direct WhatsApp Voice &amp; Screen Triage:</strong> Private 1-on-1 channel directly with your mentor for immediate voice &amp; screen assistance.</span>
+                </li>
+                <li>
+                  <svg class="check-icon-pro" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Direct Hiring Partner Referrals &amp; Alumni Network:</strong> Warm introductions directly to engineering hiring managers actively hiring our graduates.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Technical Requirement: Dynamic WhatsApp link with URL encoded message for Pro -->
+            <div class="card-action">
+              <a href="#" class="btn btn-whatsapp-pro dynamic-wa-link" data-tier="pro" id="ctaProTier">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>Claim Pro Spot on WhatsApp &rarr;</span>
+              </a>
+              <div class="prefill-preview">
+                <small>Pre-filled message: <em>"Hi! I'm ready to apply for the Elite Full-Stack Accelerator (Pro)..."</em></small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Trust Badges & Guarantees -->
+        <div class="pricing-trust-bar">
+          <div class="trust-item">
+            <svg class="trust-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Instant WhatsApp Chat With Lead Mentor</span>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Tailored 90-Day Engineering Roadmap Provided on Day 1</span>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>14-Day Risk-Free Evaluation Period</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Video Playback Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalVideoTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="live-rec-badge"><span class="rec-dot"></span> DEVSTREAM</span>
+          <h4 id="modalVideoTitle" class="modal-video-title">Session Preview</h4>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close video player">&times;</button>
+      </div>
+
+      <div class="modal-video-frame">
+        <div class="interactive-player-sim">
+          <img src="assets/hero_video.jpg" id="modalVideoPoster" alt="Video Player Preview" class="modal-poster">
+          
+          <!-- Simulated Video Controls -->
+          <div class="player-hud">
+            <div class="hud-top">
+              <span class="hud-quality">4K HDR &bull; 60 FPS</span>
+              <span class="hud-mentor">Lead Instructor: Anya Reed</span>
+            </div>
+            
+            <div class="hud-center">
+              <button class="hud-play-toggle" id="hudPlayToggle" aria-label="Toggle playback">
+                <svg viewBox="0 0 24 24" fill="currentColor" id="hudPlayIcon"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+
+            <div class="hud-bottom">
+              <div class="progress-bar-container" id="progressBar">
+                <div class="progress-filled" id="progressFilled"></div>
+              </div>
+              <div class="hud-controls-row">
+                <div class="hud-time">
+                  <span id="currentTime">01:14</span> / <span id="totalTime">03:42</span>
+                </div>
+                <div class="hud-status-badge">
+                  <span class="live-badge-glow"></span> LIVE SIMULATION
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <p class="modal-cta-note">Ready to experience this level of 1-on-1 mentorship for yourself?</p>
+        <a href="#packages" class="btn btn-modal-cta" id="modalPackageLink">Claim Your Mentorship Seat &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sales Rep SOP Quick Drawer (Internal Tool for Sales Reps) -->
+  <aside class="sop-drawer" id="sopDrawer" aria-label="Sales Rep WhatsApp SOP Drawer">
+    <div class="sop-trigger-bar" id="sopTriggerBar">
+      <span class="sop-icon">&#128221;</span>
+      <span class="sop-tab-text">Chat Rep 3-Step SOP Script</span>
+      <span class="sop-chevron" id="sopChevron">&#9650;</span>
+    </div>
+    <div class="sop-content" id="sopContent">
+      <div class="sop-header">
+        <h4>WhatsApp Sales Team Playbook (3-Step SOP)</h4>
+        <p>Use these exact response templates to qualify and close inbound leads arriving from this page.</p>
+      </div>
+
+      <div class="sop-step">
+        <div class="sop-step-number">STEP 1</div>
+        <div class="sop-step-title">The Instant Mirror &amp; Goal Alignment (Within 3 Mins)</div>
+        <div class="sop-script-box">
+          <code>"Hey [Name]! Thanks for reaching out about our [Core Sprint / Elite Pro] mentorship. We just got your message. To make sure we give you the exact right guidance: what kind of software roles or tech stack are you aiming for right now?"</code>
+        </div>
+      </div>
+
+      <div class="sop-step">
+        <div class="sop-step-number">STEP 2</div>
+        <div class="sop-step-title">The Diagnostic Gap Analysis (Uncovering The Core Blocker)</div>
+        <div class="sop-script-box">
+          <code>"Got it. What's been the biggest roadblock holding you back so far? Is it getting stuck debugging alone, passing technical interviews, or knowing how to architect real production apps that impress recruiters?"</code>
+        </div>
+      </div>
+
+      <div class="sop-step">
+        <div class="sop-step-number">STEP 3</div>
+        <div class="sop-step-title">The Custom Pitch &amp; WhatsApp Onboarding Close</div>
+        <div class="sop-script-box">
+          <code>"That's exactly why our 1-on-1 model works so fast—you get paired directly with a senior engineer who does live pair programming with you and unblocks you on WhatsApp daily. We have 2 spots left this week for the [Package]. Can I send you the direct enrollment link to reserve your first sprint call?"</code>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Bottom WhatsApp Floating Button -->
+  <div class="sticky-whatsapp-widget" id="whatsappWidget">
+    <div class="wa-tooltip" id="waTooltip">
+      <button class="tooltip-close" id="tooltipClose" aria-label="Close tooltip">&times;</button>
+      <div class="tooltip-header">
+        <span class="mentor-dot"></span> <strong>Anya (Lead Mentor)</strong>
+      </div>
+      <p class="tooltip-text">"Hey there! Have questions about our packages or your tech background? Message me directly!"</p>
+    </div>
+    
+    <a href="#" class="wa-float-btn dynamic-wa-link" data-tier="general" id="floatingWaBtn" aria-label="Chat directly on WhatsApp">
+      <span class="unread-badge">1</span>
+      <svg class="wa-bubble-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">Dev<span class="text-gradient">Scale</span></div>
+        <p class="footer-desc">Elite 1-on-1 mentorship transforming aspiring software engineers into high-earning tech professionals.</p>
+        <p class="footer-copy">&copy; 2026 DevScale Technologies Inc. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Direct WhatsApp Routes</h5>
+        <ul>
+          <li><a href="#" class="footer-wa-link dynamic-wa-link" data-tier="standard">Core Career Sprint Inquiry</a></li>
+          <li><a href="#" class="footer-wa-link dynamic-wa-link" data-tier="pro">Elite Full-Stack Accelerator Inquiry</a></li>
+          <li><a href="#" class="footer-wa-link dynamic-wa-link" data-tier="general">General Admissions Chat</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-trust-col">
+        <h5>Guarantee &amp; Safety</h5>
+        <p>14-day 100% money-back guarantee on all accelerator packages. All sessions held 1-on-1 over secure high-definition video and cloud live-share environments.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
