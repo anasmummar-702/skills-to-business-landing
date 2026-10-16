@@ -4,7 +4,7 @@
 
 // 1) Your WhatsApp number, WITH country code. Spaces, + and dashes are fine.
 //    Example: '+91 98765 43210'
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '+971 50 734 9311';
 
 // 2) Video links. Paste a link between the quotes and save.
 //    Works with: YouTube (any link, incl. youtu.be and Shorts), Vimeo,
