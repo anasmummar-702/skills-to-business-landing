@@ -887,3 +887,49 @@ svg { width: 1em; height: 1em; flex: none; }
 
 /* Real photos fill the card image area, keeping faces in view */
 .story__media .story__photo { object-fit: cover; object-position: center 25%; }
+
+
+/* ==========================================================================
+   Plans: 1-month and 3-month sections
+   ========================================================================== */
+.plan { max-width: 940px; margin: 0 auto; }
+.plan + .plan { margin-top: clamp(48px, 6vw, 72px); }
+.plan__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-2);
+}
+.plan__title {
+  font-family: var(--heading);
+  font-size: clamp(1.4rem, 2.6vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+.plan--best .plan__title {
+  background: linear-gradient(180deg, #E4EBFF 0%, #8FA6FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.plan__note { font-family: var(--subheading); font-size: 1.05rem; color: var(--text-2); }
+
+.pkg__ribbon {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  z-index: 2;
+  padding: 5px 12px 6px;
+  border-radius: 0 0 10px 10px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #0A0B10;
+  background: linear-gradient(135deg, #FFFFFF, #C9D5FF);
+  box-shadow: 0 0 20px -4px rgba(169, 188, 255, 0.7);
+}
+.pkg__price-main:first-child { margin-top: 0; }

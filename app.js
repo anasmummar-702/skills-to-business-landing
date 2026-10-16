@@ -116,7 +116,7 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
       if (!nowEl || !wasEl) return;
       const now = toNumber(nowEl.textContent);
       const was = toNumber(wasEl.textContent);
-      if (!now || !was || was <= now) { wasEl.style.display = 'none'; return; }
+      if (!now || !was || was <= now) { (wasEl.closest('.pkg__price-top') || wasEl).style.display = 'none'; return; }
       const pct = Math.round((was - now) / was * 100);
       if (offEl) offEl.textContent = pct + '% OFF';
       if (saveEl) saveEl.textContent = 'You save ' + formatMoney(was - now, nowEl.textContent.trim());
