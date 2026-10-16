@@ -106,8 +106,8 @@ svg { width: 1em; height: 1em; flex: none; }
 .tag--mkt  { background: var(--mkt-tint);  color: var(--mkt); }
 
 /* ---------- Sections ---------- */
-.sec { padding: clamp(80px, 10vw, 128px) 0; border-top: 1px solid var(--line); }
-.sec--alt { background: rgba(255, 255, 255, 0.012); }
+.sec { padding: clamp(80px, 10vw, 128px) 0; }
+.sec--alt { background: transparent; }
 .sec-head { max-width: 640px; margin-bottom: clamp(40px, 5vw, 56px); }
 .sec-head--center { margin-inline: auto; text-align: center; }
 .sec-title {
@@ -901,8 +901,6 @@ svg { width: 1em; height: 1em; flex: none; }
   flex-wrap: wrap;
   gap: 6px 20px;
   margin-bottom: 20px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--line-2);
 }
 .plan__title {
   font-family: var(--heading);
