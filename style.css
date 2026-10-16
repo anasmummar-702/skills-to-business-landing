@@ -931,3 +931,42 @@ svg { width: 1em; height: 1em; flex: none; }
   box-shadow: 0 0 20px -4px rgba(169, 188, 255, 0.7);
 }
 .pkg__price-main:first-child { margin-top: 0; }
+
+
+/* ==========================================================================
+   Master plan (both courses, 6 months)
+   ========================================================================== */
+.pkg--master {
+  max-width: 940px;
+  margin: 24px auto 0;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(170deg, #161B30 0%, #0F1117 60%) padding-box,
+    linear-gradient(120deg, #6E8BFF, #A9BCFF 40%, #F5B14C) border-box;
+  box-shadow: 0 0 80px -20px rgba(110, 139, 255, 0.45), 0 40px 90px -40px rgba(0, 0, 0, 0.9);
+}
+.pkg--master::before { background: none; box-shadow: none; }
+.pkg--master::after { background: radial-gradient(circle, rgba(110, 139, 255, 0.35), rgba(245, 177, 76, 0.15) 60%, transparent); width: 520px; }
+.pkg--master .pkg__ico { background: linear-gradient(135deg, rgba(110,139,255,.25), rgba(245,177,76,.25)); color: #DDE4FF; }
+.pkg--master .pkg__name {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  background: linear-gradient(180deg, #FFFFFF, #A9BCFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pkg--master .pkg__list svg { color: #A9BCFF; }
+.master {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+}
+.master__right .pkg__inc { margin-top: 0; padding-top: 0; border-top: 0; }
+.pkg__list--2col { grid-template-columns: 1fr; }
+.pkg--master .btn--light .ico-wa { color: var(--wa); }
+
+@media (max-width: 760px) {
+  .master { grid-template-columns: 1fr; }
+  .master__right .pkg__inc { margin-top: 4px; padding-top: 22px; border-top: 1px solid var(--line); }
+}

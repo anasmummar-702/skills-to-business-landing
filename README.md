@@ -6,7 +6,7 @@ A one-page, mobile-friendly landing page for 1-on-1 mentorship in **Coding** and
 1. **Hero** – headline, two buttons, intro video and a short description
 2. **Student stories** – three cards with illustrations (swap in real photos any time)
 3. **What you'll learn** – a video and benefits for each course
-4. **Choose your course** – two price cards with an automatic "% OFF" badge and WhatsApp buttons
+4. **Choose your course** – Coding and Digital Marketing (1 month, $149 each) plus a 6-month Master Plan ($299), each with a WhatsApp button
 
 ## Quick setup (edit the top of `app.js`)
 - `WHATSAPP_NUMBER` – your number with country code, e.g. `'+91 98765 43210'`

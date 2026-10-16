@@ -227,7 +227,7 @@
 
 
   <!-- =====================================================================
-       SECTION 4 — Plans: 1 month and 3 months for each course. Clicking opens WhatsApp with the package
+       SECTION 4 — Plans: Coding 1 month, Marketing 1 month, Master Plan 6 months. Clicking opens WhatsApp with the package
        details filled in. Edit the text here; the WhatsApp message is built
        from what's written on each card automatically.
        Set your number in app.js → WHATSAPP_NUMBER.
@@ -239,22 +239,16 @@
         <p class="sec-lede">Tap a course to chat with us on WhatsApp. Your message will already include the course details.</p>
       </header>
 
-      <!-- PLANS — edit prices here. Leave data-pkg-was empty for no discount;
-           when it has a price, the "% OFF" badge and "You save" line appear automatically. -->
+      <!-- PLANS — edit prices here (data-pkg-price). To show a discount, put the
+           original price in data-pkg-was; the "% OFF" badge and "You save" line appear automatically. -->
 
-      <!-- Plan 1: 1 month -->
-      <div class="plan">
-        <div class="plan__head">
-          <h3 class="plan__title">1-month plan</h3>
-          <p class="plan__note">Try it out. Pay month to month.</p>
-        </div>
-        <div class="packages">
+      <div class="packages">
         <article class="pkg pkg--code" data-package>
           <div class="pkg__head">
             <span class="pkg__ico"><svg><use href="#i-code"/></svg></span>
             <div>
-              <h3 class="pkg__name" data-pkg-name>Coding Mentorship</h3>
-              <p class="pkg__for">For beginners who want to start coding.</p>
+              <h3 class="pkg__name" data-pkg-name>Coding</h3>
+              <p class="pkg__for">1-month plan. Start building websites.</p>
             </div>
           </div>
           <div class="pkg__price">
@@ -263,7 +257,7 @@
               <span class="pkg__off" data-pkg-off></span>
             </div>
             <div class="pkg__price-main">
-              <span class="pkg__amount" data-pkg-price>AED 149</span>
+              <span class="pkg__amount" data-pkg-price>$149</span>
               <span class="pkg__term">/ <span data-pkg-duration>1 month</span></span>
             </div>
             <p class="pkg__save" data-pkg-save></p>
@@ -283,8 +277,8 @@
           <div class="pkg__head">
             <span class="pkg__ico"><svg><use href="#i-megaphone"/></svg></span>
             <div>
-              <h3 class="pkg__name" data-pkg-name>Digital Marketing Mentorship</h3>
-              <p class="pkg__for">For students, business owners and freelancers.</p>
+              <h3 class="pkg__name" data-pkg-name>Digital Marketing</h3>
+              <p class="pkg__for">1-month plan. Start growing brands online.</p>
             </div>
           </div>
           <div class="pkg__price">
@@ -293,7 +287,7 @@
               <span class="pkg__off" data-pkg-off></span>
             </div>
             <div class="pkg__price-main">
-              <span class="pkg__amount" data-pkg-price>AED 149</span>
+              <span class="pkg__amount" data-pkg-price>$149</span>
               <span class="pkg__term">/ <span data-pkg-duration>1 month</span></span>
             </div>
             <p class="pkg__save" data-pkg-save></p>
@@ -308,83 +302,49 @@
             <li><svg><use href="#i-check"/></svg>Doubt support on WhatsApp</li>
           </ul>
         </article>
-        </div>
       </div>
 
-      <!-- Plan 2: 3 months -->
-      <div class="plan plan--best">
-        <div class="plan__head">
-          <h3 class="plan__title">3-month plan</h3>
-          <p class="plan__note">The full program, at a better price.</p>
+      <!-- Master plan: both courses, 6 months -->
+      <article class="pkg pkg--master" data-package>
+        <span class="pkg__ribbon">Best value</span>
+        <div class="master">
+          <div class="master__left">
+            <div class="pkg__head">
+              <span class="pkg__ico"><svg><use href="#i-rocket"/></svg></span>
+              <div>
+                <h3 class="pkg__name" data-pkg-name>Master Plan</h3>
+                <p class="pkg__for">Everything we teach, coding and marketing, in one 6-month program.</p>
+              </div>
+            </div>
+            <div class="pkg__price">
+              <div class="pkg__price-top">
+                <span class="pkg__was" data-pkg-was></span>
+                <span class="pkg__off" data-pkg-off></span>
+              </div>
+              <div class="pkg__price-main">
+                <span class="pkg__amount" data-pkg-price>$299</span>
+                <span class="pkg__term">/ <span data-pkg-duration>6 months</span></span>
+              </div>
+              <p class="pkg__save" data-pkg-save></p>
+            </div>
+            <a href="#" class="btn btn--light btn--block" data-wa-button><svg class="ico-wa"><use href="#i-wa"/></svg> Chat about the Master Plan</a>
+          </div>
+          <div class="master__right">
+            <p class="pkg__inc">What's included</p>
+            <ul class="pkg__list pkg__list--2col" data-pkg-features>
+            <li><svg><use href="#i-check"/></svg>Both courses: Coding + Digital Marketing</li>
+            <li><svg><use href="#i-check"/></svg>2 live one-on-one sessions every week</li>
+            <li><svg><use href="#i-check"/></svg>Full stack: HTML, CSS, JavaScript, React &amp; Node.js</li>
+            <li><svg><use href="#i-check"/></svg>SEO, Google Ads, Meta Ads &amp; content strategy</li>
+            <li><svg><use href="#i-check"/></svg>5 portfolio projects + 2 live ad campaigns</li>
+            <li><svg><use href="#i-check"/></svg>Weekly code &amp; campaign reviews</li>
+            <li><svg><use href="#i-check"/></svg>Priority doubt support on WhatsApp</li>
+            <li><svg><use href="#i-check"/></svg>Mock interviews, resume &amp; client-finding help</li>
+            <li><svg><use href="#i-check"/></svg>Certificates for both courses</li>
+            </ul>
+          </div>
         </div>
-        <div class="packages">
-        <article class="pkg pkg--code pkg--best" data-package>
-          <span class="pkg__ribbon">Best value</span>
-          <div class="pkg__head">
-            <span class="pkg__ico"><svg><use href="#i-code"/></svg></span>
-            <div>
-              <h3 class="pkg__name" data-pkg-name>Coding Mentorship</h3>
-              <p class="pkg__for">For beginners and graduates who want a developer job.</p>
-            </div>
-          </div>
-          <div class="pkg__price">
-            <div class="pkg__price-top">
-              <span class="pkg__was" data-pkg-was>AED 447</span>
-              <span class="pkg__off" data-pkg-off></span>
-            </div>
-            <div class="pkg__price-main">
-              <span class="pkg__amount" data-pkg-price>AED 300</span>
-              <span class="pkg__term">/ <span data-pkg-duration>3 months</span></span>
-            </div>
-            <p class="pkg__save" data-pkg-save></p>
-          </div>
-          <a href="#" class="btn btn--wa btn--block" data-wa-button><svg class="ico-wa"><use href="#i-wa"/></svg> Chat about Coding</a>
-          <p class="pkg__inc">What's included</p>
-          <ul class="pkg__list" data-pkg-features>
-            <li><svg><use href="#i-check"/></svg>24 live one-on-one sessions</li>
-            <li><svg><use href="#i-check"/></svg>HTML, CSS, JavaScript, React &amp; Node.js</li>
-            <li><svg><use href="#i-check"/></svg>3 portfolio projects, deployed live</li>
-            <li><svg><use href="#i-check"/></svg>Weekly code reviews</li>
-            <li><svg><use href="#i-check"/></svg>Doubt support on WhatsApp</li>
-            <li><svg><use href="#i-check"/></svg>Mock interviews &amp; resume help</li>
-            <li><svg><use href="#i-check"/></svg>Certificate of completion</li>
-          </ul>
-        </article>
-
-        <article class="pkg pkg--mkt pkg--best" data-package>
-          <span class="pkg__ribbon">Best value</span>
-          <div class="pkg__head">
-            <span class="pkg__ico"><svg><use href="#i-megaphone"/></svg></span>
-            <div>
-              <h3 class="pkg__name" data-pkg-name>Digital Marketing Mentorship</h3>
-              <p class="pkg__for">For students, business owners and freelancers.</p>
-            </div>
-          </div>
-          <div class="pkg__price">
-            <div class="pkg__price-top">
-              <span class="pkg__was" data-pkg-was>AED 447</span>
-              <span class="pkg__off" data-pkg-off></span>
-            </div>
-            <div class="pkg__price-main">
-              <span class="pkg__amount" data-pkg-price>AED 300</span>
-              <span class="pkg__term">/ <span data-pkg-duration>3 months</span></span>
-            </div>
-            <p class="pkg__save" data-pkg-save></p>
-          </div>
-          <a href="#" class="btn btn--wa btn--block" data-wa-button><svg class="ico-wa"><use href="#i-wa"/></svg> Chat about Marketing</a>
-          <p class="pkg__inc">What's included</p>
-          <ul class="pkg__list" data-pkg-features>
-            <li><svg><use href="#i-check"/></svg>24 live one-on-one sessions</li>
-            <li><svg><use href="#i-check"/></svg>SEO, Google Ads &amp; Meta Ads</li>
-            <li><svg><use href="#i-check"/></svg>Content &amp; social media strategy</li>
-            <li><svg><use href="#i-check"/></svg>Run 2 live ad campaigns</li>
-            <li><svg><use href="#i-check"/></svg>Doubt support on WhatsApp</li>
-            <li><svg><use href="#i-check"/></svg>Portfolio &amp; client-finding help</li>
-            <li><svg><use href="#i-check"/></svg>Certificate of completion</li>
-          </ul>
-        </article>
-        </div>
-      </div>
+      </article>
 
       <div class="helpbar">
         <div>

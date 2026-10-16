@@ -136,7 +136,7 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
     const feeLine = off ? '*Fee:* ' + price + ' (' + off + ', regular ' + was + ')' : '*Fee:* ' + price;
 
     return [
-      "Hi! I'm interested in the " + name + '.',
+      "Hi! I'm interested in the " + name + (/plan|mentorship/i.test(name) ? '' : ' course') + '.',
       '',
       '*Course:* ' + name,
       feeLine,
