@@ -100,7 +100,11 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
   // Builds the message from what is written on the package card,
   // so editing the card in index.html updates the message too.
   function toNumber(t) { return parseInt(String(t).replace(/[^\d]/g, ''), 10) || 0; }
-  function formatRupees(n) { return '₹' + n.toLocaleString('en-IN'); }
+  // Formats the saving in the same currency shown on the card (e.g. "AED 700")
+  function formatMoney(n, sample) {
+    const prefix = (String(sample).match(/^[^\d]*/) || [''])[0];
+    return prefix + n.toLocaleString('en-US');
+  }
 
   // Fills the "% OFF" badge and "You save" line from the two prices on the card
   function setupDiscounts() {
@@ -115,7 +119,7 @@ const GENERAL_MESSAGE = "Hi! I'd like help choosing between the Coding and Digit
       if (!now || !was || was <= now) { wasEl.style.display = 'none'; return; }
       const pct = Math.round((was - now) / was * 100);
       if (offEl) offEl.textContent = pct + '% OFF';
-      if (saveEl) saveEl.textContent = 'You save ' + formatRupees(was - now);
+      if (saveEl) saveEl.textContent = 'You save ' + formatMoney(was - now, nowEl.textContent.trim());
     });
   }
 
