@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding &amp; Digital Marketing Mentorship</title>
+  <meta name="description" content="One-on-one mentorship in coding and digital marketing. Learn with real projects and turn your skills into your own online business.">
+  <meta name="theme-color" content="#07080C">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5.5 12.5 4 4 9-9.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.6v12.8a1 1 0 0 0 1.52.85l10.4-6.4a1 1 0 0 0 0-1.7L9.52 4.75A1 1 0 0 0 8 5.6Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></g></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c3-1 6-1 6-1s0 3-1 6l-6 6-5-5 6-6Z"/><path d="m8 10-4 1 3-4h4M14 16l-1 4 4-3v-4"/><circle cx="15.5" cy="8.5" r="1.3"/></g></symbol>
+    <symbol id="i-review" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4M8.5 11l1.8 1.8L14 9"/></g></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></g></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h4l7 4V6l-7 4H3Z"/><path d="M18 9a4 4 0 0 1 0 6M7 14l1.5 6"/></g></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20V4M4 20h16M8 16l4-5 3 3 5-6"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></g></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24Zm-3.53 4.6c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.08 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.24 3.73 2.07.88 2.49.71 2.94.66.45-.04 1.45-.59 1.66-1.17.2-.57.2-1.07.14-1.17-.06-.11-.22-.17-.47-.29-.24-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12-.16.25-.63.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.05-.38-1.99-1.22-.74-.66-1.23-1.47-1.38-1.72-.14-.24-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.17.04-.31-.02-.43-.06-.12-.54-1.34-.76-1.83-.19-.41-.39-.42-.57-.43h-.48Z"/></symbol>
+  </defs>
+</svg>
+
+
+<!-- Site-wide background: grid, colour glows and business/upskill graphics -->
+<div class="site-bg" aria-hidden="true">
+  <span class="glow glow--1"></span>
+  <span class="glow glow--2"></span>
+  <span class="glow glow--3"></span>
+  <span class="glow glow--4"></span>
+  <span class="glow glow--5"></span>
+
+
+  <!-- Growth bars with up arrow -->
+  <svg class="deco deco--bars" viewBox="0 0 240 220" fill="none">
+    <rect class="d-bar" x="20"  y="150" width="30" height="50" rx="6"/>
+    <rect class="d-bar" x="65"  y="120" width="30" height="80" rx="6"/>
+    <rect class="d-bar" x="110" y="85"  width="30" height="115" rx="6"/>
+    <rect class="d-bar d-bar--hi" x="155" y="45" width="30" height="155" rx="6"/>
+    <path class="d-line" d="M24 120 80 90 125 60 190 18M168 16h24v24"/>
+  </svg>
+
+
+
+
+
+</div>
+
+<main>
+
+  <!-- =====================================================================
+       SECTION 1 — Heading, then intro video
+       ===================================================================== -->
+  <section class="hero" id="start">
+
+    <div class="wrap hero__inner">
+
+    <!-- Floating service cards around the heading (decorative) -->
+    <div class="hero__deco" aria-hidden="true">
+      <div class="fcard fcard--session">
+        <span class="fcard__avatars"><i>M</i><i>Y</i></span>
+        <div><b>Live 1-on-1 session</b><small><span class="fdot"></span>Mentor online now</small></div>
+      </div>
+
+      <div class="fcard fcard--code">
+        <div class="fcard__bar"><i></i><i></i><i></i><span>my-business.html</span></div>
+        <code><span class="c-t">&lt;h1&gt;</span>My online store<span class="c-t">&lt;/h1&gt;</span><br><span class="c-k">const</span> launch = <span class="c-f">ready</span>();</code>
+      </div>
+
+      <div class="fcard fcard--stats">
+        <div class="fcard__top"><b>Ad campaign</b><span class="fup">+64%</span></div>
+        <svg viewBox="0 0 160 56" fill="none"><path d="M2 48 30 40 55 44 82 28 108 32 134 14 158 6" stroke="#F5B14C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 48 30 40 55 44 82 28 108 32 134 14 158 6V56H2Z" fill="url(#fgrad)"/><defs><linearGradient id="fgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5B14C" stop-opacity=".35"/><stop offset="1" stop-color="#F5B14C" stop-opacity="0"/></linearGradient></defs></svg>
+        <small>Clicks this week</small>
+      </div>
+
+      <div class="fcard fcard--chat">
+        <span class="fcard__wa"><svg><use href="#i-wa"/></svg></span>
+        <div><p class="fbubble">Your landing page looks great. Ready to launch?</p><small>Mentor · just now</small></div>
+      </div>
+
+      <div class="fcard fcard--cert">
+        <span class="fcard__medal"><svg><use href="#i-check"/></svg></span>
+        <div><b>Certificate earned</b><small>Digital Marketing</small></div>
+      </div>
+    </div>
+
+      <h1 class="hero__title">What if you could turn your skills into your own online business?</h1>
+
+      <p class="hero__lede">Learn with a personal mentor who works with you live, reviews every project and answers on WhatsApp whenever you get stuck.</p>
+
+      <div class="hero__ctas">
+        <a href="#courses" class="btn btn--light">Explore the courses <svg><use href="#i-arrow"/></svg></a>
+        <a href="#" class="btn btn--outline" data-wa-general><svg class="ico-wa"><use href="#i-wa"/></svg> Chat on WhatsApp</a>
+      </div>
+
+
+      <!-- Intro video: paste the link in app.js → VIDEO_LINKS.intro -->
+      <div class="hero__video">
+        <div class="video-frame" data-video="intro">
+          <div class="video-empty">
+            <span class="video-empty__play"><svg><use href="#i-play"/></svg></span>
+            <span class="video-empty__text">Watch the intro</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero__caption">In this short intro, see how a typical week works: live sessions with your mentor, the projects you'll build, and how you get help on WhatsApp between classes.</p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       SECTION 2 — 6 student stories
+       Photos: put student-1.jpg, student-2.jpg and student-3.jpg in the assets folder
+       (portrait or landscape both work; faces are kept in frame). Until then, the illustrations in assets/people are shown.
+       SAMPLE STORIES — replace with your real students before going live.
+       ===================================================================== -->
+  <section class="sec sec--alt" id="stories">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 class="sec-title">People who started where you are</h2>
+        <p class="sec-lede">Three students, three different starting points. None of them had a degree in what they do now.</p>
+      </header>
+
+      <div class="stories">
+
+        <article class="story story--code">
+          <div class="story__media" data-initials="A"><img class="story__ill" src="assets/people/student-1.svg" alt="" loading="lazy"><img class="story__photo" src="assets/student-1.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="story__body">
+            <div class="story__meta"><span class="tag tag--code">Coding</span><span class="story__who">Arjun, 24</span></div>
+            <h3 class="story__path">Delivery rider <svg><use href="#i-arrow"/></svg> Junior web developer</h3>
+            <p class="story__text">He practised on his phone between deliveries for months and got nowhere. With a mentor checking his code every week, he built three live websites in four months and was hired by a Pune agency.</p>
+          </div>
+        </article>
+
+        <article class="story story--mkt">
+          <div class="story__media" data-initials="M"><img class="story__ill" src="assets/people/student-2.svg" alt="" loading="lazy"><img class="story__photo" src="assets/student-2.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="story__body">
+            <div class="story__meta"><span class="tag tag--mkt">Marketing</span><span class="story__who">Meera, 31</span></div>
+            <h3 class="story__path">Homemaker <svg><use href="#i-arrow"/></svg> Freelance ads manager</h3>
+            <p class="story__text">After a six-year career break she wanted work she could do from home. She learned Meta and Google Ads on her own small budget, then landed two local clients before the course even ended.</p>
+          </div>
+        </article>
+
+        <article class="story story--code">
+          <div class="story__media" data-initials="R"><img class="story__ill" src="assets/people/student-3.svg" alt="" loading="lazy"><img class="story__photo" src="assets/student-3.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="story__body">
+            <div class="story__meta"><span class="tag tag--code">Coding</span><span class="story__who">Rohan, 22</span></div>
+            <h3 class="story__path">B.Com graduate <svg><use href="#i-arrow"/></svg> Backend developer</h3>
+            <p class="story__text">Interviewers kept asking about projects he didn't have. His mentor helped him build and deploy a full booking system, and walking through that code is what got him his first offer.</p>
+          </div>
+        </article>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       SECTION 3 — What we teach: Coding & Digital Marketing (video + text)
+       ===================================================================== -->
+  <section class="sec" id="teach">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 class="sec-title">What you'll learn, and what you get</h2>
+        <p class="sec-lede">Watch a short walkthrough of each course, then see exactly what's included.</p>
+      </header>
+
+      <!-- 3.1 Coding -->
+      <div class="track track--code">
+        <!-- Coding video: paste the link in app.js → VIDEO_LINKS.coding -->
+        <div class="video-frame" data-video="coding">
+          <div class="video-empty">
+            <span class="video-empty__play"><svg><use href="#i-play"/></svg></span>
+            <span class="video-empty__text">Coding course walkthrough</span>
+          </div>
+        </div>
+        <div class="track__text">
+          <span class="tag tag--code">Course 1</span>
+          <h3 class="track__title">Coding</h3>
+          <p class="track__desc">Go from your first line of HTML to a working full-stack app. You write the code yourself in every session, and your mentor reviews it with you line by line.</p>
+          <ul class="benefits">
+            <li><span class="benefits__ico"><svg><use href="#i-layers"/></svg></span><div><strong>Web basics to full stack</strong><span>HTML, CSS, JavaScript, React, Node.js and databases.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-rocket"/></svg></span><div><strong>Three real projects</strong><span>A portfolio site, a business website and a full app, all live.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-review"/></svg></span><div><strong>Code reviews</strong><span>See how professionals would write the same code.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-brief"/></svg></span><div><strong>Interview practice</strong><span>Mock interviews plus resume and GitHub help.</span></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3.2 Digital Marketing -->
+      <div class="track track--mkt">
+        <!-- Digital marketing video: paste the link in app.js → VIDEO_LINKS.marketing -->
+        <div class="video-frame" data-video="marketing">
+          <div class="video-empty">
+            <span class="video-empty__play"><svg><use href="#i-play"/></svg></span>
+            <span class="video-empty__text">Digital marketing walkthrough</span>
+          </div>
+        </div>
+        <div class="track__text">
+          <span class="tag tag--mkt">Course 2</span>
+          <h3 class="track__title">Digital Marketing</h3>
+          <p class="track__desc">Learn to bring customers to a business online. You run real campaigns with a small budget, so you learn from actual results rather than slides.</p>
+          <ul class="benefits">
+            <li><span class="benefits__ico"><svg><use href="#i-megaphone"/></svg></span><div><strong>Every major channel</strong><span>SEO, Google Ads, Meta Ads, content and email.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-target"/></svg></span><div><strong>Live campaigns</strong><span>Plan, launch and improve real ads, step by step.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-chart"/></svg></span><div><strong>Reports that win clients</strong><span>Turn analytics into results you can present.</span></div></li>
+            <li><span class="benefits__ico"><svg><use href="#i-brief"/></svg></span><div><strong>Job or freelance ready</strong><span>Portfolio, certificate and help finding clients.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       SECTION 4 — Two packages. Clicking opens WhatsApp with the package
+       details filled in. Edit the text here; the WhatsApp message is built
+       from what's written on each card automatically.
+       Set your number in app.js → WHATSAPP_NUMBER.
+       ===================================================================== -->
+  <section class="sec sec--alt" id="courses">
+    <div class="wrap">
+      <header class="sec-head sec-head--center">
+        <h2 class="sec-title">Choose your course</h2>
+        <p class="sec-lede">Tap a course to chat with us on WhatsApp. Your message will already include the course details.</p>
+      </header>
+
+      <div class="packages">
+
+        <article class="pkg pkg--code" data-package>
+          <div class="pkg__head">
+            <span class="pkg__ico"><svg><use href="#i-code"/></svg></span>
+            <div>
+              <h3 class="pkg__name" data-pkg-name>Coding Mentorship</h3>
+              <p class="pkg__for">For beginners and graduates who want a developer job.</p>
+            </div>
+          </div>
+          <!-- Price: edit the offer price (data-pkg-price) and the original price (data-pkg-was).
+               The "% OFF" badge and "You save" line are calculated automatically. -->
+          <div class="pkg__price">
+            <div class="pkg__price-top">
+              <span class="pkg__was" data-pkg-was>₹39,999</span>
+              <span class="pkg__off" data-pkg-off></span>
+            </div>
+            <div class="pkg__price-main">
+              <span class="pkg__amount" data-pkg-price>₹24,999</span>
+              <span class="pkg__term">/ <span data-pkg-duration>3 months</span></span>
+            </div>
+            <p class="pkg__save" data-pkg-save></p>
+          </div>
+          <a href="#" class="btn btn--wa btn--block" data-wa-button><svg class="ico-wa"><use href="#i-wa"/></svg> Chat about Coding</a>
+          <p class="pkg__inc">What's included</p>
+          <ul class="pkg__list" data-pkg-features>
+            <li><svg><use href="#i-check"/></svg>24 live one-on-one sessions</li>
+            <li><svg><use href="#i-check"/></svg>HTML, CSS, JavaScript, React &amp; Node.js</li>
+            <li><svg><use href="#i-check"/></svg>3 portfolio projects, deployed live</li>
+            <li><svg><use href="#i-check"/></svg>Weekly code reviews</li>
+            <li><svg><use href="#i-check"/></svg>Doubt support on WhatsApp</li>
+            <li><svg><use href="#i-check"/></svg>Mock interviews &amp; resume help</li>
+            <li><svg><use href="#i-check"/></svg>Certificate of completion</li>
+          </ul>
+        </article>
+
+        <article class="pkg pkg--mkt" data-package>
+          <div class="pkg__head">
+            <span class="pkg__ico"><svg><use href="#i-megaphone"/></svg></span>
+            <div>
+              <h3 class="pkg__name" data-pkg-name>Digital Marketing Mentorship</h3>
+              <p class="pkg__for">For students, business owners and freelancers.</p>
+            </div>
+          </div>
+          <!-- Price: edit the offer price (data-pkg-price) and the original price (data-pkg-was).
+               The "% OFF" badge and "You save" line are calculated automatically. -->
+          <div class="pkg__price">
+            <div class="pkg__price-top">
+              <span class="pkg__was" data-pkg-was>₹24,999</span>
+              <span class="pkg__off" data-pkg-off></span>
+            </div>
+            <div class="pkg__price-main">
+              <span class="pkg__amount" data-pkg-price>₹14,999</span>
+              <span class="pkg__term">/ <span data-pkg-duration>2 months</span></span>
+            </div>
+            <p class="pkg__save" data-pkg-save></p>
+          </div>
+          <a href="#" class="btn btn--wa btn--block" data-wa-button><svg class="ico-wa"><use href="#i-wa"/></svg> Chat about Digital Marketing</a>
+          <p class="pkg__inc">What's included</p>
+          <ul class="pkg__list" data-pkg-features>
+            <li><svg><use href="#i-check"/></svg>16 live one-on-one sessions</li>
+            <li><svg><use href="#i-check"/></svg>SEO, Google Ads &amp; Meta Ads</li>
+            <li><svg><use href="#i-check"/></svg>Content &amp; social media strategy</li>
+            <li><svg><use href="#i-check"/></svg>Run 2 live ad campaigns</li>
+            <li><svg><use href="#i-check"/></svg>Doubt support on WhatsApp</li>
+            <li><svg><use href="#i-check"/></svg>Portfolio &amp; client-finding help</li>
+            <li><svg><use href="#i-check"/></svg>Certificate of completion</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="helpbar">
+        <div>
+          <p class="helpbar__title">Not sure which course fits you?</p>
+          <p class="helpbar__text">Tell us your background and goals, and we'll recommend the right one.</p>
+        </div>
+        <a href="#" class="btn btn--light" data-wa-general><svg class="ico-wa"><use href="#i-wa"/></svg> Ask us on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>
